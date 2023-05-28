@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    z-index: 999;
+}
+.section1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Hero\ Video\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.left-col img{
+    width: 100%;
+}
+.about-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.left-col{
+    flex-basis: 50%;
+}
+.right-col{
+    flex-basis: 47%;
+}
+.gallery-img img{
+    width: 100%;
+}
+.gallery-box{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-gap: 20px;
+}
+.contact-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-right img{
+    width: 100%;
+}
+.contact-left{
+    flex-basis: 50%;
+}
+.contact-right{
+    flex-basis: 47%;
+}
+.send{
+    text-align: center !important;
+}
+.footer-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-2{
+    flex-basis: 20%;
+}
+.pass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+@media(max-width:770px){
+    .about-box{
+        flex-direction: column;
+    }
+    .right-col{
+        margin-top: 20px;
+    }
+    #school{
+        text-align: center !important;
+    }
+    .contact-box{
+        flex-direction: column;
+    }
+    .contact-right{
+        margin-top: 20px;
+    }
+    .gallery-box{
+        display: block;
+    }
+    .gallery-img{
+        margin-top: 20px;
+    }
+    .footer-box{
+        flex-direction: column;
+    }
+    .contact-right{
+        flex-basis: 50%;
+    }
+}
